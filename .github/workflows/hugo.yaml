@@ -21,7 +21,8 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       
-      - name: setup hugp
+      - uses: oven-sh/setup-bun@v2
+      - name: setup hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
@@ -35,4 +36,6 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          wranglerVersion: '4.59.1'
+          packageManager: bun
           command: deploy
