@@ -1,0 +1,13 @@
+{
+  "name": "monuke-maho",
+  "compatibility_date": "2026-01-13",
+  "assets": {
+    "directory": "./public"
+  },
+  "routes": [
+    {
+      "pattern": "monukedayo.cc",
+      "custom_domain": true
+    }
+  ]
+}
