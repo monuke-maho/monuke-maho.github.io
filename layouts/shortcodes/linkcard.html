@@ -1,0 +1,27 @@
+{{- $url := .Get "url" -}}
+{{- $res := resources.GetRemote $url -}}
+{{- $host := (urls.Parse $url).Host -}}
+
+<div class="minimal-linkcard">
+  <a href="{{ $url }}" target="_blank" rel="noopener">
+    <div class="card-icon">
+      <img src="https://www.google.com/s2/favicons?domain={{ $host }}&sz=128" alt="favicon">
+    </div>
+    <div class="card-text">
+      {{- if $res -}}
+        {{- $title := findRE "<title>(.*?)</title>" $res.Content 1 -}}
+        {{- $desc := findRE "<meta name=\"description\" content=\"(.*?)\"" $res.Content 1 -}}
+        
+        <div class="card-title">
+          {{- if $title -}}{{ index $title 0 | htmlUnescape | replaceRE "<title>|</title>" "" }}{{- else -}}{{ $url }}{{- end -}}
+        </div>
+        <div class="card-desc">
+          {{- if $desc -}}{{ index $desc 0 | htmlUnescape | replaceRE "<meta name=\"description\" content=\"|\"" "" }}{{- else -}}{{ $host }}{{- end -}}
+        </div>
+      {{- else -}}
+        <div class="card-title">{{ $url }}</div>
+        <div class="card-desc">{{ $host }}</div>
+      {{- end -}}
+    </div>
+  </a>
+</div>

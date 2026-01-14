@@ -53,7 +53,9 @@ Firefoxとそのフォークブラウザ(Floorp,Lible,Zen)のプロファイル�
 
 ## インストール
 
-https://github.com/monuke-maho/syt/releases/latest
+
+
+{{< linkcard url="https://github.com/monuke-maho/syt/releases/latest" >}}
 
 からWindows,macOS向けのインストーラーをダウンロード可能です。
 
