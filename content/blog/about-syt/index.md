@@ -5,6 +5,7 @@ title: '私が開発している"syt"について'
 description: '私が開発しているyt-dlpを簡単に扱えるようにするためのデスクトップアプリケーションについて'
 categories: ["Development"]
 tags: ["開発","syt"]
+slug: 'about-syt'
 ---
 
 ## sytとは
