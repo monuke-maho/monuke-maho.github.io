@@ -6,6 +6,16 @@ theme: stack
 outputs:
   home: ["html","rss"]
 
+related:
+  includeNewer: true
+  threshold: 60
+  toLower: false
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 200
+
 DefaultContentLanguage: ja
 
 permalinks:
