@@ -1,0 +1,20 @@
+{
+    "name": "Hugo",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/hugo:1": {
+            "version": "latest",
+            "extended": true
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "budparr.language-hugo-vscode",
+                "nodamushi.udon"
+            ]
+        }
+    },
+    "forwardPorts": [1313],
+    "postCreateCommand": "hugo version"
+}
