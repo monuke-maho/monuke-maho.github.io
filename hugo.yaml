@@ -3,6 +3,9 @@ languageCode: ja-jp
 title: monuke-maho
 theme: stack
 
+outputs:
+  home: ["html","rss"]
+
 DefaultContentLanguage: ja
 
 permalinks:
@@ -37,6 +40,7 @@ params:
     published: 2006/01/02
     lastUpdated: 2006/01/02 15:04:05
   description: "もぬけのブログだ"
+  rssFullContent: true
   mainSections:
     - blog
   sidebar:

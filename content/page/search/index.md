@@ -1,6 +1,9 @@
 ---
 title: "search"
 layout: "search"
+outputs:
+  - html
+  - json
 menu:
   main:
     name: "Search"
