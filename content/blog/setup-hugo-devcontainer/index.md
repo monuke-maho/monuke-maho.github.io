@@ -1,6 +1,6 @@
 ---
 date: '2026-01-15T16:59:54Z'
-draft: true
+draft: false
 title: 'Hugo用のDevcontainerを構築する'
 slug: 'setup-hugo-devcontainer'
 categories: ["Development"]
