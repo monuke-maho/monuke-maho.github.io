@@ -6,6 +6,7 @@ description: '私が開発しているyt-dlpを簡単に扱えるようにする
 categories: ["Development"]
 tags: ["開発","syt"]
 slug: 'about-syt'
+image: cover.webp
 ---
 
 ## sytとは

@@ -5,6 +5,7 @@ title: 'Hugoで作ったブログをCloudflare Workersにデプロイする'
 slug: 'hugo-deploy-to-cloudflare-workers'
 categories: ["Development"]
 tags: ["hugo","cloudflare","github actions"]
+image: cover.webp
 ---
 
 ## Cloudflare WorkersとPagesの違い

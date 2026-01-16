@@ -5,6 +5,7 @@ title: 'Hugo用のDevcontainerを構築する'
 slug: 'setup-hugo-devcontainer'
 categories: ["Development"]
 tags: ["hugo","Docker"]
+image: cover.webp
 ---
 
 ## Devcontainer

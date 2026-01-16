@@ -5,6 +5,7 @@ title: 'はじめまして。'
 slug: 'hello'
 categories: ["note"]
 tags: ["日記"]
+image: cover.webp
 ---
 
 ## はじめまして

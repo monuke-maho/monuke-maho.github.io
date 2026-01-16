@@ -5,6 +5,7 @@ title: 'MinecraftサーバーをDockerで構築する'
 slug: 'minecraftserver-with-docker'
 categories: ["Development"]
 tags: ["Docker","Minecraft"]
+image: cover.webp
 ---
 
 ## マイクラサーバー

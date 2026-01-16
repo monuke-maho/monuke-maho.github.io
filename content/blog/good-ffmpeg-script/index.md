@@ -5,6 +5,7 @@ title: 'いい感じのffmpeg変換用bat'
 slug: 'good-ffmpeg-script'
 categories: ["Note"]
 tags: ["コマンドライン","FFmpeg"]
+image: cover.webp
 ---
 
 ## 用途

@@ -5,6 +5,7 @@ title: '趣味・プログラミング'
 slug: 'shumi-puroguramingu'
 categories: ["Note"]
 tags: ["日記"]
+image: cover.webp
 ---
 
 ## 趣味
