@@ -54,13 +54,12 @@ Firefoxとそのフォークブラウザ(Floorp,Lible,Zen)のプロファイル�
 
 ## インストール
 
-
-
 {{< linkcard url="https://github.com/monuke-maho/syt/releases/latest" >}}
 
-からWindows,macOS向けのインストーラーをダウンロード可能です。
+からWindows,Linux,macOS向けのインストーラーをダウンロード可能です。
 
-Windowsユーザーであれば`syt_x.x.x_x64-setup.exe`及び`syt_x.x.x_x64_ja-JP.msi`を、  
+Windowsユーザーであれば`syt_x.x.x_x64-setup.exe`及び`syt_x.x.x_x64_ja-JP.msi`を、 
+Linuxユーザーであれば`syt_x.x.x_amd64.deb`,`syt_x.x.x_x86_64.rpm`,`syt_x.x.x_amd64.Appimage`を、   
 macOSユーザーであれば`syt_x.x.x_aarch64.dmg`をダウンロードしてください。
 
 ### ffmpeg
@@ -77,6 +76,32 @@ winget install Gyan.FFmpeg
 ```bash
 brew install ffmpeg
 ```
+
+#### linux
+
+```bash
+sudo apt install ffmpeg
+```
+
+もしくは手動でtarから
+
+```bash
+wget https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz
+unar ffmpeg-master-latest-linux64-gpl.tar.xz
+sudo mv ffmpeg-master-latest-linux64-gpl/bin/* /usr/local/bin/
+```
+
+### deno
+
+yt-dlpはdenoを使用します。  
+無くても動作自体はしますが、ブラウザからCookieを読み込む際にはほぼ必須です。  
+
+{{< linkcard url="https://deno.com" >}}
+
+公式サイトを参考にインストールしてください。  
+macOSに限り、Homebrewでも可能です。
+
+`proto`や`volta`などのパッケージ管理システムには現在対応していません。
 
 ## スタック
 
